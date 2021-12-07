@@ -1,0 +1,6 @@
+<div class="container">
+<h2><%= @article.title %></h2>
+<%= link_to "Edit article ?", edit_article_path %>
+<%= link_to "Delete article", article_path(@article), method: :delete, data: {confirm: "Are you Sure ?"} %>
+<p><%= @article.content %></p>
+</div>
